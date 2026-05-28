@@ -126,6 +126,49 @@ Marcos cubiertos: NHS DCB0129 / DCB0160 Clinical Safety Case, NHS DTAC v3, UK MD
 
 ---
 
+## 🇨🇱 Chile — guía de uso sin overlay oficial
+
+ArcKit **no cuenta aún con un overlay oficial para Chile**, pero existen marcos normativos locales que todo arquitecto debe considerar al diseñar sistemas en el país.
+
+### Marco normativo aplicable
+
+| Marco | Descripción | Aplicabilidad |
+|---|---|---|
+| **Ley 21.663 — Ley Marco de Ciberseguridad (2024)** | Establece obligaciones para operadores de servicios esenciales e infraestructura crítica. Crea la Agencia Nacional de Ciberseguridad (ANCI). | Obligatoria para sistemas críticos y servicios esenciales |
+| **Ley 19.628 — Protección de Datos Personales** | Marco vigente de tratamiento de datos personales. Actualmente en proceso de modernización. | Obligatoria para sistemas que traten datos personales |
+| **Estándares de la Secretaría de Gobierno Digital** | Normas de interoperabilidad, seguridad y accesibilidad para sistemas del Estado chileno. | Obligatoria para proyectos del sector público |
+| **NIST Cybersecurity Framework** | Referencia técnica ampliamente adoptada en Chile tanto en sector público como privado. | Recomendada |
+
+### Estrategia recomendada con ArcKit hoy
+
+Dado que no existe `arckit-cl`, la aproximación más efectiva es combinar overlays existentes:
+
+```bash
+# Base genérica + overlay UE como referencia para protección de datos
+claude plugin install arckit arckit-eu
+```
+
+El overlay `arckit-eu` cubre GDPR, que es el modelo en que se basa la futura ley de datos personales chilena, por lo que sus artefactos (DPIA, registros de tratamiento, análisis de base legal) son directamente adaptables al contexto local.
+
+### Artefactos clave a generar para proyectos en Chile
+
+```
+/arckit.risk          # Registro de riesgos — adaptar a amenazas según Ley 21.663
+/arckit.dpia          # Evaluación de impacto en protección de datos (Ley 19.628)
+/arckit.secure-by-design  # Diseño seguro alineado a controles ANCI
+/arckit.requirements  # Incluir requisitos de residencia de datos y soberanía
+```
+
+### Contribuir un overlay `arckit-cl`
+
+ArcKit acepta contribuciones comunitarias de nuevas jurisdicciones. Si quieres desarrollar un overlay oficial para Chile que cubra la Ley 21.663, Ley 19.628 y los estándares de la Secretaría de Gobierno Digital, puedes seguir el modelo de cualquier overlay existente:
+
+- Repositorio: [github.com/tractorjuice/arc-kit](https://github.com/tractorjuice/arc-kit)
+- Guía de contribución: `CONTRIBUTING.md` en el repositorio
+- Comunidad: [discord.gg/JqgjQSnD](https://discord.gg/JqgjQSnD)
+
+---
+
 ## Instalar todos los overlays
 
 ```bash
