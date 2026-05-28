@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: arckit
-  title: ArcKit — Enterprise Architecture Governance Harness
+  title: ArcKit — Enterprise Architecture Governance
   description: >
     Framework de comandos asistidos por IA que genera documentos de gobernanza
     completos y listos para auditoría — desde análisis de stakeholders y registros
