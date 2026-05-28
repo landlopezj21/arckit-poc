@@ -41,7 +41,7 @@ spec:
   type: biblioteca
   lifecycle: experimental
   owner: team-arq
-  system: herramientas-de-gobernanza
+
 
   # Dependencias principales
   dependsOn:
