@@ -8,7 +8,8 @@ ArcKit es un framework de comandos asistidos por IA que genera documentos de gob
 
 ## ¿Qué problema resuelve?
 
-Producir documentación de arquitectura de calidad enterprise — plans de negocio, evaluaciones de riesgo, diseños técnicos, registros de trazabilidad — es costoso y lento. ArcKit envuelve tu asistente de codificación AI basado en plantillas y listo para auditoría, reduciendo semanas de trabajo de consultoría a horas.
+Producir documentación de arquitectura de calidad, planes de negocio, evaluaciones de riesgo, diseños técnicos y registros de trazabilidad.  
+ArcKit envuelve tu asistente de codificación AI basado en plantillas y listo para auditoría, reduciendo semanas de trabajo de consultoría a horas.
 
 ## Características principales
 
