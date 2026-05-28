@@ -39,8 +39,8 @@ metadata:
 
 spec:
   type: biblioteca
-  lifecycle: produccion
-  owner: group:equipo-arquitectura
+  lifecycle: experimental
+  owner: team-arq
   system: herramientas-de-gobernanza
 
   # Dependencias principales
