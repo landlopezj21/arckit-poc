@@ -1,0 +1,53 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: arckit
+  title: ArcKit — Enterprise Architecture Governance Harness
+  description: >
+    Framework de comandos asistidos por IA que genera documentos de gobernanza
+    completos y listos para auditoría — desde análisis de stakeholders y registros
+    de riesgos hasta revisiones de diseño y matrices de trazabilidad. Sigue el marco
+    de entrega ágil GDS del Gobierno del Reino Unido con overlays jurisdiccionales
+    contribuidos por la comunidad (UE, Francia, Austria, Canadá, UAE, Australia, EE.UU.).
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: tractorjuice/arc-kit
+  tags:
+    - architecture
+    - governance
+    - ai
+    - gds
+    - compliance
+    - uk-government
+    - enterprise
+  links:
+    - url: https://arckit.org
+      title: Sitio oficial
+      icon: web
+    - url: https://github.com/tractorjuice/arc-kit
+      title: Repositorio GitHub
+      icon: github
+    - url: https://arckit.org/commands.html
+      title: Referencia de comandos
+      icon: dashboard
+    - url: https://arckit.org/getting-started.html
+      title: Guía de inicio
+      icon: help
+    - url: https://discord.gg/JqgjQSnD
+      title: Comunidad Discord
+      icon: chat
+
+spec:
+  type: biblioteca
+  lifecycle: produccion
+  owner: group:equipo-arquitectura
+  system: herramientas-de-gobernanza
+
+  # Dependencias principales
+  dependsOn:
+    - component:claude-code
+    - component:gemini-cli
+
+  # Provee las siguientes APIs (comandos ArcKit)
+  providesApis:
+    - arckit-commands-api

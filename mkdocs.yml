@@ -1,0 +1,24 @@
+site_name: ArcKit
+site_description: >
+  El Harness de Gobernanza de Arquitectura Enterprise — comandos asistidos por IA
+  para una gobernanza de arquitectura sistemática y conforme a normativa.
+site_url: https://arckit.org
+repo_url: https://github.com/tractorjuice/arc-kit
+repo_name: tractorjuice/arc-kit
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Inicio: index.md
+  - Primeros pasos: getting-started.md
+  - Comandos AI: commands.md
+  - Jurisdicciones: jurisdictions.md
+  - Fases GDS: gds-phases.md
+  - Agentes autónomos: agents.md
