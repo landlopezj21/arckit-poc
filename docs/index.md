@@ -4,10 +4,6 @@
 
 ArcKit es un framework de comandos asistidos por IA que genera documentos de gobernanza completos y listos para auditoría. Cubre desde el análisis de stakeholders y registros de riesgos hasta revisiones de diseño y matrices de trazabilidad. Sigue el marco de entrega ágil GDS del Gobierno del Reino Unido, con overlays jurisdiccionales contribuidos por la comunidad.
 
----
-
-## ¿Qué problema resuelve?
-
 Producir documentación de arquitectura de calidad, planes de negocio, evaluaciones de riesgo, diseños técnicos y registros de trazabilidad.  
 ArcKit envuelve tu asistente de codificación AI basado en plantillas y listo para auditoría, reduciendo semanas de trabajo de consultoría a horas.
 
